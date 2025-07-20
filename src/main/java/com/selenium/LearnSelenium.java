@@ -3,7 +3,9 @@ package com.selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LearnSelenium {
@@ -13,7 +15,8 @@ public class LearnSelenium {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.get("https://test.dealer.fisherplows.com/");
+
 		driver.manage().window().maximize();
 
 		System.out.println(driver.getTitle());
